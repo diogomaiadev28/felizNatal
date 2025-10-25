@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Seletor Universal - Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    /* 100vh significa - Ocupar 100% da ViewHeigh (ViewHeigh: Altura da tela do dispositivo) */
+    height: 100vh;
+    font-family: 'Archivo', Arial, Helvetica, sans-serif;
+}
+
+/* Ajuste para que as imagens não passem da largura máxima de 100% 
+em relação aos elementos(tags) que as englobam.
+*/
+.img {
+    max-width: 100%;
+}
+
+header {
+    /* Ocupe 100% do seu espaço disponível */
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE9E8;
+    padding: 3.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12.6rem;
+}
+
+.sobre__doacao {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.feliz__natal {
+    display: flex;
+    align-items: center;
+    /* Espaço ENTRE os elementos */
+    gap: 1.2rem; 
+    /* Espaço EXTERNO localizado ABAIXO do elemento */
+    /* margin-bottom: 3.2rem; */
+}
+
+.feliz__natal p {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h1, h3 {
+    font-size: 4.0rem;
+    /* LARGURA */
+    width: 56rem;
+    line-height: 120%;
+}
+
+p {
+    /* Altura ENTRE as linhas */
+    line-height: 150%;
+}
+
+span {
+    /* COR DA FONTE */
+    color: #CD3C32;
+}
+
+.sobre__doacao p {
+    font-size: 1.8rem;
+    width: 46.0rem;
+}
+
+.btn__doar {
+    width: 23.8rem;
+    height: 4.9rem;
+    margin-top: 4.0rem;
+    background-color: #CD3C32;
+    color: #FFFFFF;
+    /* Controla a capitalização das letras */
+    text-transform: uppercase;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+main,
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8.0rem;
+    padding-bottom: 8.0rem;
+    margin-bottom: 4.0rem;
+}
+
+.conteudo__principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.0rem;
+    text-align: center;
+}
+
+.conteudo__principal h3 {
+    font-size: 4.0rem;
+}
+
+.conteudo__principal p {
+    font-size: 2.0rem;
+    width: 47.7rem;
+}
+
+.conteudo__principal h2 {
+    font-size: 6.4rem;
+    color: #CD3C32;
+}
+
+.container__section {
+    display: flex;
+    gap: 20rem;
+}
+
+.fazer__doacao {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.fazer__doacao h3 {
+    font-size: 4.0rem;
+    width: 48.8rem;
+}
+
+.fazer__doacao p {
+    font-size: 2.4rem;
+    width: 60.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FFE9E8;
+    height: 8.0rem;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.redes__sociais {
+    display: flex;
+    gap: 3.6rem; 
+}
+
+.redes__sociais button {
+    background-color: #FFD5D3;
+    border-radius: 50%;
+    width: 4.0rem;
+    height: 4.0rem;
+    border: none;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 577px){
+    header{
+        padding: 9.4rem 2.4rem;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    h1{
+        width: 32.7rem;
+        font-size: 3.2rem;
+    }
+    .feliz__natal{
+        gap: 1.2;
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+    }
+    .feliz__natal p{
+        font-size: 2.6rem;
+    }
+    .sobre__doacao{
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre__doacao p{
+        width: 100%;
+        max-width: 32.7rem;
+        font-size: 1.8rem;
+    }
+    .btn__doar{
+        width: 32.7rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    main{
+        padding: 8.0rem 2.4rem;
+    }
+    .conteudo__principal{
+        width: 100%;
+    }
+    .conteudo__principal h3{
+        font-size: 3.2rem;
+    }
+    .conteudo__principal p{
+        font-size: 1.8rem;
+        max-width: 32.7rem;
+        width: 100%;
+    }
+    .conteudo__principal h2{
+        font-size: 3.2rem;
+    }
+    .conteudo__principal h2{
+        font-size: 3.2rem;
+    }
+    section{
+        padding: 8.0rem 0;
+    }
+    .container__section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4.8rem;
+    }
+    .fazer__doacao{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2.4rem;
+    }
+    .fazer__doacao h3{
+        font-size: 3.2rem;
+        width: 32.7rem;
+    }
+    .fazer__doacao p{
+        font-size: 1.8rem;
+        width: 32.7rem;
+    }
+    footer{
+        height: 22.2rem;
+    }
+    .container__footer{
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    .redes__sociais{
+        gap: 3.6rem;
+    }
+    .container__section img{
+        width: 22.2rem;
+    }
+    .conteudo__principal img{
+        width: 32.6rem;
+    }
+}
+@media only screen and (max-width: 1122px){
+    header{
+        padding: 9.6rem 3.2rem;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sobre__doacao{
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feliz__natal{
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+        width: 18.0rem;
+    }
+    .feliz__natal p, .sobre__doacao p{
+        font-size: 2.4rem;
+    }
+    h1{
+        font-size: 4.0rem;
+    }
+    main, .container__section{
+        padding: 8.0rem 0;
+    }
+    .conteudo__principal h3{
+        font-size: 4.0rem;
+    }
+    .conteudo__principal p{
+        font-size: 2.0rem;
+    }
+    .conteudo__principal h2{
+        font-size: 6.4rem;
+    }
+    .container__section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4.8rem;
+    }
+    .fazer__doacao{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .fazer__doacao button{
+        margin-top: 4.0rem;
+    }
+    .btn__doar{
+        width: 23.8rem;
+        height: 4.9rem;
+        font-size: 1.8rem;
+    }
+    footer{
+        height: 20.6rem;
+    }
+    .container__footer{
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    .redes__sociais{
+        gap: 3.6rem;
+    }
+}
