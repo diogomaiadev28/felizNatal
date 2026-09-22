@@ -5,119 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz Natal</title>
-    <link rel="stylesheet" href="src/css/Feliz Natal.css">
+    <link rel="stylesheet" href="src/css/tailwind.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="sobre__doacao">
-                <div class="feliz__natal">
-                    <figure>
-                        <img src="src/img/santa.png"
-                            alt="Ilustração de um rosto de Papai Noel com gorro vermelho e barba branca, sobre um fundo rosa claro.">
-                    </figure>
-                    <p>Feliz Natal</p>
+    <header class="bg-red-100 flex justify-center">
+        <div class="relative text-center lg:text-left container flex flex-col-reverse lg:flex-row items-center justify-between px-8 py-8">
+            <div class="flex flex-col items-center lg:items-baseline space-y-4 max-w-100 xl:max-w-180">
+                <div class="absolute top-8 left-1/2 lg:top-auto lg:left-auto lg:static -translate-x-1/2 lg:translate-x-0 flex items-center sm:justify-center space-x-2">
+                    <img src="/src/img/santa.png" alt="">
+                    <p class="text-gray-900 font-semibold h-fit">Feliz Natal</p>
                 </div>
-
-                <h1>Uma <span>plataforma de doação</span> para espalhar alegria</h1>
-                <p>Nessas festas de fim de ano mande um presente
-                    para a pessoa amada e compartilhe a alegria do Natal.
-                </p>
-
-                <button class="btn__doar">fazer uma doação</button>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">Uma <span class="text-red-500 opacity-80">plataforma de doação</span> para espalhar alegria</h2>
+                <p class="text-sm sm:text-base text-gray-700">Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.</p>
+                <button class="cursor-pointer bg-red-500 opacity-80 duration-300 hover:opacity-70 p-3 lg:p-4 rounded text-sm text-white mt-16 sm:w-50 lg:w-80">FAZER UMA DOAÇÃO</button>
             </div>
-            <figure>
-                <img class="img" src="src/img/oval.png"
-                    alt="Ilustração de uma loja decorada para o Natal, com presentes na vitrine e neve caindo. Uma criança de roupas de inverno observa a vitrine.">
-            </figure>
+            <img class="mt-12 w-60 sm:w-80 2xl:w-auto mb-8" src="/src/img/oval.png">
         </div>
     </header>
-
-    <main>
-        <div class="conteudo__principal">
-            <h3>Tempo limitado</h3>
-            <p>Nessas festas de fim de ano mande um presente para a pessoa
-                amada e compartilhe a alegria do Natal.
-            </p>
-
-            <h2>10d -24h - 01m - 52s</h2>
-
-            <figure>
-                <img class="img" src="src/img/illustration.png" alt="Ilustração de uma pilha de presentes coloridos com um ursinho de pelúcia no topo,
-                acompanhada de uma sacola de papel, rodeada por pequenos confetes e serpentinas festivas.">
-            </figure>
+    <main class="flex justify-center">
+        <div class="container flex flex-col items-center space-y-8 py-12">
+            <h3 class="font-semibold text-gray-900 text-2xl mds:text-4xl">Tempo limitado</h3>
+            <p class="text-sm sm:text-base text-gray-800 w-70 sm:w-130 text-center">Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.</p>
+            <h1 class="text-red-500 opacity-80 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">10d - 23h - 01m - 52s</h1>
+            <img class="md:w-auto sm:w-80 w-60" src="/src/img/illustration.png" alt="">
         </div>
     </main>
-
-    <section>
-        <div class="container__section">
-            <figure>
-                <img class="img" src="src/img/illustration2.png"
-                    alt="Mãos segurando um enfeite de Natal dourado com um ramo de pinheiro dentro, vestindo um suéter vermelho.">
-            </figure>
-
-            <div class="fazer__doacao">
-                <h3>Conectando generosidade ao redor do mundo</h3>
-
-                <p>Celebre a magia do Natal de uma maneira especial! Descubra a plataforma que permite a doação de
-                    presentes significativos para aqueles que mais precisam. Faça parte do movimento e compartilhe o
-                    verdadeiro espírito da generosidade.
-                </p>
-
-                <button class="btn__doar">fazer uma doação</button>
+    <section class="flex justify-center mt-24">
+        <div class="container flex xl:flex-row justify-between space-x-24 px-8 py-12">
+            <img class="object-contain hidden md:block md:w-80 2xl:w-auto" src="/src/img/illustration2.png" alt="">
+            <div class="text-center sm:text-left flex flex-col space-y-6 md:max-w-100 xl:max-w-180">
+                <h3 class="font-semibold text-gray-900 text-2xl md:text-3xl lg:text-4xl">Conectando generosidade ao redor do mundo</h3>
+                <p class="text-sm sm:text-base text-gray-800">Celebre a magia do Natal de uma maneira especial! Descubra a plataforma que permite a doação de presentes significativos para aqueles que mais precisam. Faça parte do movimento e compartilhe o verdadeiro espírito da generosidade</p>
+                <button class="cursor-pointer bg-red-500 opacity-70 duration-300 hover:opacity-60 p-3 lg:p-4 rounded text-sm text-white mt-8 md:w-50 lg:w-80">FAZER UMA DOAÇÃO</button>
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="container__footer">
-            <div class="feliz__natal">
-                <figure>
-                    <img src="src/img/santa.png"
-                        alt="Ilustração de um rosto de Papai Noel com gorro vermelho e barba branca, sobre um fundo rosa claro.">
-                </figure>
-                <p>Feliz Natal</p>
+    <footer class="flex justify-center bg-red-100">
+        <div class="container flex justify-between py-4 sm:px-0 px-4">
+            <div class="flex items-center space-x-2">
+                <img src="/src/img/santa.png" alt="">
+                <p class="text-gray-900 font-semibold">Feliz Natal</p>
             </div>
-
-            <div class="redes__sociais">
-                <button>
-                    <a href="https://x.com/?lang=pt" target="_blank">
-                        <figure>
-                            <img src="src/img/logo-twitter.png"
-                                alt="Logo do X (Antigo Twitter) com cor de fundo rosa forte">
-                        </figure>
-                    </a>
-                </button>
-                <button>
-                    <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">
-                        <figure>
-                            <img src="src/img/logo-whatsapp.png" alt="Logo do WhatsApp com cor de fundo rosa forte">
-                        </figure>
-                    </a>
-                </button>
-                <button>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <figure>
-                            <img src="src/img/logo-instagram.png" alt="Logo do Instagram com cor de fundo rosa forte">
-                        </figure>
-                    </a>
-                </button>
-                <button>
-                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
-                        <figure>
-                            <img src="src/img/logo-facebook.png" alt="Logo do Facebook com cor de fundo rosa forte">
-                        </figure>
-                    </a>
-                </button>
-                <button>
-                    <a href="https://google.com" target="_blank">
-                        <figure>
-                            <img src="src/img/logo-google.png" alt="Logo da Google com cor de fundo rosa forte">
-                        </figure>
-                    </a>
-                </button>
-            </div>
+            <ul class="flex space-x-4 sm:space-x-8 items-center">
+                <a href="https://x.com">
+                    <li class="rounded-full h-fit w-fits bg-red-200 p-2 flex justify-center items-center">
+                        <img class="sm:w-5 sm:h-5 w-4 h-4" src="/src/img/logo-twitter.png" alt="">
+                    </li>
+                </a>
+                <a href="https://web.whatsapp.com">
+                    <li class="rounded-full h-fit w-fits bg-red-200 p-2 flex justify-center items-center">
+                        <img class="sm:w-5 sm:h-5 w-4 h-4" src="/src/img/logo-whatsapp.png" alt="">
+                    </li>
+                </a>
+                <a href="https://instagram.com">
+                    <li class="rounded-full h-fit w-fits bg-red-200 p-2 flex justify-center items-center">
+                        <img class="sm:w-5 sm:h-5 w-4 h-4" src="/src/img/logo-instagram.png" alt="">
+                    </li>
+                </a>
+                <a href="https://facebook.com">
+                    <li class="rounded-full h-fit w-fits bg-red-200 p-2 flex justify-center items-center">
+                        <img class="sm:w-5 sm:h-5 w-4 h-4" src="/src/img/logo-facebook.png" alt="">
+                    </li>
+                </a>
+                <a href="https://google.com">
+                    <li class="rounded-full h-fit w-fits bg-red-200 p-2 flex justify-center items-center">
+                        <img class="sm:w-5 sm:h-5 w-4 h-4" src="/src/img/logo-google.png" alt="">
+                    </li>
+                </a>
+            </ul>
         </div>
     </footer>
 </body>
