@@ -1,4 +1,4 @@
-# 🎄 Merry Christmas - Donation Platform
+# 🇺🇸🇬🇧🎄 Merry Christmas - Donation Platform
 
 <p align="center">
   <a href="#-about-the-project">English</a> • 
@@ -56,11 +56,10 @@ During the rebuilding process with Tailwind CSS, I applied the following concept
 
 5. **Open index.html in your browser.**
 
+<br>
+<br>
 
-
-
-
-# 🎄 Feliz Natal - Plataforma de Doação de Natal
+# 🇧🇷🎄 Feliz Natal - Plataforma de Doação de Natal
 
 <p align="center">
   <a href="#-about-the-project">English</a> • 
