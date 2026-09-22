@@ -40,7 +40,8 @@ During the rebuilding process with Tailwind CSS, I applied the following concept
 
 1. **Clone this repository:**
    ```bash
-   git clone [https://github.com/diogomaiadev28/felizNatal.git](https://github.com/diogomaiadev28/felizNatal.git)
+   git clone https://github.com/diogomaiadev28/felizNatal.git
+   ```
 
 2. **Navigate to the project folder:**
    ```bash
@@ -101,7 +102,8 @@ Durante o processo de reconstrução do projeto com o Tailwind CSS, apliquei os 
 
 1. **Clone este repositório:**
    ```bash
-   git clone [https://github.com/diogomaiadev28/felizNatal.git](https://github.com/diogomaiadev28/felizNatal.git)
+   git clone https://github.com/diogomaiadev28/felizNatal.git
+   ```
 
 2. **Navegue até a pasta do projeto:**
    ```bash
